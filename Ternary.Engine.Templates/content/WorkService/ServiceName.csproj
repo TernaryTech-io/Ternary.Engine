@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ServiceName-REPLACE_USER_SECRETS_ID</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Ternary.Engine.Core" />
+    <Using Include="Ternary.Engine.Core.Configuration" />
+    <Using Include="Ternary.Engine.Core.Data" />
+    <Using Include="Ternary.Engine.Core.Models" />
+    <Using Include="Ternary.Engine.Core.Services" />
+    <Using Include="Ternary.Engine.Core.Types" />
+    <Using Include="Ternary.Engine.Core.Workflow" />
+  </ItemGroup>
+
+</Project>

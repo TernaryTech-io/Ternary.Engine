@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>EngineName</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="globalsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Ternary.Engine.Core" />
+    <Using Include="Ternary.Engine.CommandLine" />
+    <Using Include="Ternary.Engine.Core.Configuration" />
+    <Using Include="Ternary.Engine.Core.Data" />
+    <Using Include="Ternary.Engine.Core.Models" />
+    <Using Include="Ternary.Engine.Core.Services" />
+    <Using Include="Ternary.Engine.Core.Types" />
+    <Using Include="Ternary.Engine.Core.Workflow" />
+    <Using Include="Microsoft.EntityFrameworkCore" />
+    <Using Include="Microsoft.Extensions.Configuration" />
+    <Using Include="Microsoft.Extensions.DependencyInjection" />
+    <Using Include="Microsoft.Extensions.Hosting" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="Spectre.Console" />
+    <Using Include="Spectre.Console.AnsiConsole">
+      <Alias>console</Alias>
+    </Using>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="engine.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

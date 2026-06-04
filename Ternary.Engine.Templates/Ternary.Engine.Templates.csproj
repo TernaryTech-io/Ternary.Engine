@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageId>Ternary.Engine.Templates</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageType>Template</PackageType>
+    <Title>Ternary Engine Work Service Templates</Title>
+    <Authors>Ternary Technology</Authors>
+    <Description>dotnet new templates for scaffolding Ternary Engine Worker Services</Description>
+    <PackageTags>templates;workservice;ternary</PackageTags>
+    <IsPackable>true</IsPackable>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content\**\*" PackagePath="content\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
+  </ItemGroup>
+
+</Project>

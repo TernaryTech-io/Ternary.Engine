@@ -1,0 +1,27 @@
+{
+  //Duplicate this entire section to create a new environment. Reference the environment in the appsettings.json
+  "Development": {
+    "DatabaseSettings": {
+      "DbConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TernaryDb;Integrated Security=True;Connect Timeout=90",
+      "Provider": "SqlServer", //Options: SqlServer, PostgreSql, MongoDb, MySql
+      "MigrationAssembly": "EngineName",
+      "ExecutionTimeout": 10, //In Minutes
+      "RetryAttempts": 3,
+      "MaxBatchSize": 42 //42 is the EFCore default
+    },
+    "DefaultServiceOptions": {
+      "WorkerIntervalMinutes": 5,
+      "MaxLevelConcurrency": 4,
+      "CustomJobsDirectory": ".customjobs"
+    },
+    "SplunkLogging": {
+      "SplunkUrl": "",
+      "SplunkToken": "",
+      "MinimumLevel": "Information"
+    },
+    "FileLogging": {
+      "LogPath": "C:\\Migration Services\\Log\\",
+      "MinimumLevel": "Information"
+    }
+  }
+}

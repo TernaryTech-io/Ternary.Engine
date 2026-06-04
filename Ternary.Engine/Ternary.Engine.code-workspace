@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Ternary.Engine.Core"
+		}
+	],
+	"settings": {}
+}
