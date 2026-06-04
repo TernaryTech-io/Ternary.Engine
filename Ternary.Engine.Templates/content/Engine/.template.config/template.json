@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "OpenCloud",
+  "author": "TernaryTechnology",
   "classifications": ["CLI", "Engine", "Ternary"],
   "identity": "Ternary.Engine.Host",
   "name": "Ternary Engine Host",
