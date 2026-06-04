@@ -16,14 +16,16 @@
       "type": "parameter",
       "datatype": "choice",
       "defaultValue": "Custom",
-      "description": "The WorkServiceType enum value for this service.",
+      "description": "The WorkServiceType enum value for the first Worker. Additional Workers can be added at another time.",
       "choices": [
-        { "choice": "Example",    "description": "Example service type" },
-        { "choice": "Migration", "description": "Migration service type" },
-        { "choice": "Metadata",  "description": "Metadata service type" },
-        { "choice": "Monitor",   "description": "Monitor service type" },
-        { "choice": "Export",    "description": "Export service type" },
-        { "choice": "Custom",    "description": "Custom service type" }
+        { "choice": "Extract",    "description": "Extract structured or unstructured data from source systems to objects" },
+        { "choice": "Analyze", "description": "Analyze data from source systems, or extracted objects" },
+        { "choice": "Organize",  "description": "Organize, categorize extracted data" },
+        { "choice": "Transform",   "description": "Transform extracted data" },
+        { "choice": "Map",    "description": "Map extracted data" },
+        { "choice": "Validate",    "description": "Validate transformed and mapped data" }
+        { "choice": "Import",    "description": "Import validated data into target system" }
+        { "choice": "Custom",    "description": "Custom worker service." }
       ]
     },
     "userSecretsId": {
