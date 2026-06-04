@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
+    <PackageReference Include="Ternary.Engine.Core" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

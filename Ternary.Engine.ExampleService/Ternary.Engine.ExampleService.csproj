@@ -1,16 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-ServiceName-REPLACE_USER_SECRETS_ID</UserSecretsId>
+    <UserSecretsId>dotnet-Ternary.Engine.EampleService-30bcb116-0dbf-4ed2-a487-9f74130bf6cd</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Ternary.Engine.Core" Version="1.0.1" />
   </ItemGroup>
-
   <ItemGroup>
     <Using Include="Ternary.Engine.Core" />
     <Using Include="Ternary.Engine.Core.Configuration" />
@@ -20,5 +19,4 @@
     <Using Include="Ternary.Engine.Core.Types" />
     <Using Include="Ternary.Engine.Core.Workflow" />
   </ItemGroup>
-
 </Project>

@@ -18,7 +18,7 @@
       "defaultValue": "Custom",
       "description": "The WorkServiceType enum value for this service.",
       "choices": [
-        { "choice": "Intake",    "description": "Intake service type" },
+        { "choice": "Example",    "description": "Example service type" },
         { "choice": "Migration", "description": "Migration service type" },
         { "choice": "Metadata",  "description": "Metadata service type" },
         { "choice": "Monitor",   "description": "Monitor service type" },
