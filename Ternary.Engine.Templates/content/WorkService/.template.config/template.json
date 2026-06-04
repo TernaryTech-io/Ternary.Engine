@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "OpenCloud",
+  "author": "TernaryTechnology",
   "classifications": ["Worker", "Service", "Ternary"],
   "identity": "Ternary.Engine.WorkService",
   "name": "Ternary Engine Work Service",
