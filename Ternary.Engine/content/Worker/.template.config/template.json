@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Ternary Technology",
+    "classifications": [ "Common", "Code", "HostedService", "Worker", "BackgroundWorker" ],
+    "identity": "TernaryTemplate.Worker",
+    "name": "Ternary templates: Hosted Worker Service (BackgroundService)",
+    "shortName": "ternary-worker",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "prefix":{
+        "type": "parameter",
+        "description": "Prepended to the Name of the Worker: [prefix]Worker",
+        "datatype": "text",
+        "replaces": "Example",
+        "fileRename": "Example",
+        "defaultValue": "Example"
+      }
+    }
+  }

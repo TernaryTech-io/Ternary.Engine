@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Ternary Technology",
+    "classifications": [ "Common", "Code", "EFCore", "DbContext" ],
+    "identity": "TernaryTemplate.DbContext",
+    "name": "Ternary templates: DbContext",
+    "shortName": "ternary-dbcontext",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "prefix":{
+        "type": "parameter",
+        "description": "Prepended to the Name of the DBContext: [prefix]DbContext",
+        "datatype": "text",
+        "replaces": "Example",
+        "fileRename": "Example",
+        "defaultValue": "Example"
+      }
+    }
+  }

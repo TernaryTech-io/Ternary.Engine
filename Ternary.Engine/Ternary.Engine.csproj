@@ -6,15 +6,35 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<RootNamespace>Ternary.Engine</RootNamespace>
-		<Title>FCB Migrator</Title>
-		<ToolCommandName>migrator</ToolCommandName>
+		<Title>Ternary Engine</Title>
+		<ToolCommandName>engine</ToolCommandName>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="content\DbContext\ExampleDbContext.cs" />
+	  <Compile Remove="content\Entity\ExampleEntity.cs" />
+	  <Compile Remove="content\Runner\ExampleRunner.cs" />
+	  <Compile Remove="content\Service\ExampleService.cs" />
+	  <Compile Remove="content\Worker\ExampleWorker.cs" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Content Include="appsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Include="content\Entity\ExampleEntity.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Runner\ExampleRunner.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Service\ExampleService.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Worker\ExampleWorker.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="globalsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -23,8 +43,12 @@
 	  </Content>
 	</ItemGroup>
 
-	<ItemGroup>
+  <!--<ItemGroup>
 	  <PackageReference Include="Ternary.Engine.Core" Version="1.0.1" />
+	</ItemGroup>-->
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -46,14 +70,18 @@
 		<Using Include="Spectre.Console.AnsiConsole">
 		  <Alias>console</Alias>
 		</Using>
-		<Using Include="Ternary.Engine.Core.Configuration" />
-		<Using Include="Ternary.Engine.Core.Data" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Update="engine.bat">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="content\DbContext\ExampleDbContext.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>

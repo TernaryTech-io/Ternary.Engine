@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Ternary Technology",
+    "classifications": [ "Common", "Code", "EFCore", "Entity" ],
+    "identity": "TernaryTemplate.Entity",
+    "name": "Ternary templates: Model Entity",
+    "shortName": "ternary-entity",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "prefix":{
+        "type": "parameter",
+        "description": "Prepended to the Name of the Entity: [prefix]Entity",
+        "datatype": "text",
+        "replaces": "Example",
+        "fileRename": "Example",
+        "defaultValue": "Example"
+      }
+    }
+  }

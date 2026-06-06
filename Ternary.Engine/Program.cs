@@ -1,4 +1,4 @@
 ﻿
-TernaryAppBuilder.Create(args)
+await TernaryAppBuilder.Create(args)
         .Build()
-        .Run();
+        .RunAsync();

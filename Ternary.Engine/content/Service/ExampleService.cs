@@ -10,5 +10,10 @@ public class ExampleService : ServiceBase<WorkDbContext>
     {
 
     }
+
+    /*-----------------------------------SERVICE
+        Use the service to write common functions for interacting with the database. 
+        Many functions for finding, saving, updating, are already inherited.
+    */
 }
 

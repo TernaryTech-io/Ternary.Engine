@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Ternary Technology",
+    "classifications": [ "Common", "Code", "EFCore", "Runner" ],
+    "identity": "TernaryTemplate.Runner",
+    "name": "Ternary templates: Work Runner",
+    "shortName": "ternary-runner",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "prefix":{
+        "type": "parameter",
+        "description": "Prepended to the Name of the Runner: [prefix]Runner",
+        "datatype": "text",
+        "replaces": "Example",
+        "fileRename": "Example",
+        "defaultValue": "Example"
+      }
+    }
+  }

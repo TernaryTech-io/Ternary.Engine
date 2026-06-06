@@ -1,8 +1,7 @@
-
 using Ternary.Engine.Example;
 
 
-var config = AppConfiguration.Create(args, (config, builder) =>
+var builder = TernaryAppBuilder.Create(args, (config, builder) =>
 {
     //Add Services here
     builder.Services.AddSingleton<ExampleService>();
@@ -10,6 +9,7 @@ var config = AppConfiguration.Create(args, (config, builder) =>
     return builder;
 });
 
-await config
-    .Build() //Return App
-    .RunAsync(); // Runs App
+var app = builder.Build();
+await app.RunAsync();
+
+

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Ternary Technology",
+    "classifications": [ "Common", "Code", "EFCore", "Service" ],
+    "identity": "TernaryTemplate.Service",
+    "name": "Ternary templates: Service",
+    "shortName": "ternary-service",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "prefix":{
+        "type": "parameter",
+        "description": "Prepended to the Name of the Service: [prefix]Service",
+        "datatype": "text",
+        "replaces": "Example",
+        "fileRename": "Example",
+        "defaultValue": "Example"
+      }
+    }
+  }
