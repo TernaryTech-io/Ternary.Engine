@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ternary Technology",
+  "classifications": ["Worker", "Service", "Ternary"],
+  "identity": "Ternary.Engine.WorkerService",
+  "name": "Ternary Worker Service Project",
+  "shortName": "ternary-workerservice",
+  "sourceName":"Example",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "symbols": {
+    "prefix": {
+        "type": "parameter",
+        "description": "The prefix of the code files and classes.",
+        "datatype": "text",
+        "replaces": "ServiceName",
+        "fileRename": "ServiceName",
+        "defaultValue": "ServiceName"
+    },    
+    "userSecretsId": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "REPLACE_USER_SECRETS_ID",
+      "parameters": {
+        "format": "D"
+      }
+    }
+  }
+}
