@@ -111,6 +111,7 @@
 	<ItemGroup>
 	  <Folder Include="Data\" />
 	  <Folder Include="Models\" />
+	  <Folder Include="Properties\" />
 	  <Folder Include="Runners\" />
 	  <Folder Include="Services\" />
 	  <Folder Include="Workers\" />

@@ -2,7 +2,7 @@
   //Duplicate this entire section to create a new environment. Reference the environment in the appsettings.json
   "Development": {
     "DatabaseSettings": {
-      "DbConnection": "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;",
+      "DbConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TernaryEngine;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;",
       "Provider": "SqlServer", //Options: SqlServer, PostgreSql, MongoDb, MySql
       "DatabaseName": "TernaryEngine", // Specific to MongoDb, ignored for other providers
       "MigrationAssembly": "Ternary.Engine",
@@ -26,10 +26,10 @@
       "MinimumLevel": "Information"
     }
   },
-  "Mongo": {
+  "PostgreSql": {
     "DatabaseSettings": {
-      "DbConnection": "mongodb://admin:password@localhost/?retryWrites=true&w=majority",
-      "Provider": "MongoDb", //Options: SqlServer, PostgreSql, MongoDb, MySql
+      "DbConnection": "postgresql://admin:password@localhost:5432/TernaryEngine",
+      "Provider": "PostgreSql", //Options: SqlServer, PostgreSql, MongoDb, MySql
       "DatabaseName": "TernaryEngine", // Specific to MongoDb, ignored for other providers
       "MigrationAssembly": "Ternary.Engine",
       "ExecutionTimeout": 10, //In Minutes

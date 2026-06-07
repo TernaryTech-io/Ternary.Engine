@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Ternary Technology",
   "classifications": ["Worker", "Service", "Ternary"],
-  "identity": "Ternary.Engine.WorkerService",
+  "identity": "Ternary.Engine.Project",
   "name": "Ternary Worker Service Project",
-  "shortName": "ternary-workerservice",
+  "shortName": "ternary-project",
   "sourceName":"MyExample",
   "tags": {
     "language": "C#",

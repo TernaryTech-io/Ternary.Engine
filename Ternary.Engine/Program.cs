@@ -1,6 +1,6 @@
 ﻿
 string[] ctxArgs = ["context", "list"];
 
-await TernaryAppBuilder.Create(ctxArgs)
+await TernaryAppBuilder.Create(args)
         .Build()
         .RunAsync();

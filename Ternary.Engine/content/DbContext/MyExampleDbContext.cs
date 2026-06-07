@@ -12,7 +12,7 @@ public class MyExampleDbContext : BaseDbContext<MyExampleDbContext>
         base.OnModelCreating(builder);
         builder.Entity<MyExampleEntity>(e =>
         {
-            e.ToTable("Example", "exp")
+            e.ToTable("MyExampleEntity", "exp")
             .HasIndex(e => e.Id);
         });
     }
