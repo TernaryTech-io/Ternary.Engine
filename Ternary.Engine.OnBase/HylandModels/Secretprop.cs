@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Ternary.Engine.OnBase.Models;
+
+public partial class Secretprop
+{
+    public long Secretpropnum { get; set; }
+
+    public long? Obblobnum { get; set; }
+
+    public long? Secretproptype { get; set; }
+
+    public string? Secretpropvalue { get; set; }
+
+    public long? Flags { get; set; }
+}

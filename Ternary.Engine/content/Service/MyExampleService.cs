@@ -4,7 +4,7 @@ namespace Ternary.Engine.Custom;
 public class MyExampleService : ServiceBase<MyExampleDbContext>
 {
     public override MyExampleDbContext ServiceDbContext => GetDbContext<MyExampleDbContext>();
-    public MyExampleService(IDynamicContextFactory contextFactory,
+    public MyExampleService(DynamicContextFactory contextFactory,
         ILogger<IServiceBase> logger) : base(contextFactory, logger)
     {
 

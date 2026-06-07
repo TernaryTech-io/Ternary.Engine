@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Ternary.Engine.OnBase.Models;
+
+public partial class Blaqprocess
+{
+    public long Blaqprocessnum { get; set; }
+
+    public string? Blaqprocessname { get; set; }
+
+    public long? Blaqappnum { get; set; }
+
+    public long? Flags { get; set; }
+}

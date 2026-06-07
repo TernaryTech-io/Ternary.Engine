@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Ternary.Engine.OnBase.Models;
+
+public partial class Pltrmgmtlog
+{
+    public long Pltrmgmtlognum { get; set; }
+
+    public long? Usernum { get; set; }
+
+    public long? Registernum { get; set; }
+
+    public DateTime? Logdate { get; set; }
+
+    public long? Severityflag { get; set; }
+
+    public long? Userresponse { get; set; }
+
+    public string? Messagetext { get; set; }
+
+    public long? Actionnum { get; set; }
+
+    public long? Subactionnum { get; set; }
+
+    public long? Diskgroupnum { get; set; }
+
+    public long? Logicalplatternum { get; set; }
+
+    public long? Physicalplatternum { get; set; }
+
+    public long? Tracelvl { get; set; }
+}

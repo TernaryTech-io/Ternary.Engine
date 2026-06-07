@@ -17,16 +17,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="content\DbContext\ExampleDbContext.cs" />
 	  <Compile Remove="content\DbContext\MyExampleDbContext.cs" />
-	  <Compile Remove="content\Entity\ExampleEntity.cs" />
 	  <Compile Remove="content\Entity\MyExampleEntity.cs" />
-	  <Compile Remove="content\Runner\ExampleRunner.cs" />
 	  <Compile Remove="content\Runner\MyExampleRunner.cs" />
-	  <Compile Remove="content\Service\ExampleService.cs" />
 	  <Compile Remove="content\Service\MyExampleService.cs" />
 	  <Compile Remove="content\WorkerService\Program.cs" />
-	  <Compile Remove="content\Worker\ExampleWorker.cs" />
 	  <Compile Remove="content\Worker\MyExampleWorker.cs" />
 	</ItemGroup>
 
@@ -43,32 +38,57 @@
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 	  </Content>
-	  <Content Include="content\DbContext\.template.config\template.json" />
-	  <Content Include="content\DbContext\MyExampleDbContext.cs" />
-	  <Content Include="content\Entity\.template.config\template.json" />
-	  <Content Include="content\Entity\MyExampleEntity.cs" />
-	  <Content Include="content\Runner\.template.config\template.json" />
-	  <Content Include="content\Runner\MyExampleRunner.cs" />
-	  <Content Include="content\Service\.template.config\template.json" />
-	  <Content Include="content\Service\MyExampleService.cs" />
-	  <Content Include="content\WorkerService\.gitignore">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  <Content Include="content\DbContext\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\.template.config\template.json" />
+	  <Content Include="content\DbContext\MyExampleDbContext.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Entity\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Entity\MyExampleEntity.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Runner\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Runner\MyExampleRunner.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Service\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Service\MyExampleService.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\WorkerService\.gitignore">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\WorkerService\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	  <Content Include="content\WorkerService\appsettings.json">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\Program.cs">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\Properties\launchSettings.json">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\README.md">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\Worker\.template.config\template.json" />
-	  <Content Include="content\Worker\MyExampleWorker.cs" />
+	   <Content Include="content\WorkerService\Ternary.Engine.MyExampleWorkerService.csproj">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Worker\.template.config\template.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\Worker\MyExampleWorker.cs">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	  <Content Include="globalsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
