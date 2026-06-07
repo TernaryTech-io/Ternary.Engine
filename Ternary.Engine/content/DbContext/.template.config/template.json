@@ -5,6 +5,7 @@
     "identity": "TernaryTemplate.DbContext",
     "name": "Ternary templates: DbContext",
     "shortName": "ternary-dbcontext",
+    "sourceName": "MyExample",
     "tags": {
       "language": "C#",
       "type": "item"
@@ -14,9 +15,9 @@
         "type": "parameter",
         "description": "Prepended to the Name of the DBContext: [prefix]DbContext",
         "datatype": "text",
-        "replaces": "Example",
-        "fileRename": "Example",
-        "defaultValue": "Example"
+        "replaces": "MyExample",
+        "fileRename": "MyExample",
+        "defaultValue": "MyExample"
       }
     }
   }

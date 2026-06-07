@@ -1,9 +1,9 @@
 ﻿
-namespace Ternary.Engine.Example;
+namespace Ternary.Engine.Custom;
 
-public class ExampleWorker : WorkerBase<ExampleService>
+public class MyExampleWorker : WorkerBase<MyExampleService>
 {
-    public ExampleWorker(ExampleService service, ILogger<ExampleWorker> logger, IGlobalContext context)
+    public MyExampleWorker(MyExampleService service, ILogger<MyExampleWorker> logger, IGlobalContext context)
         :base( service, logger, context)
     {
        /* Many built in methods are virtual and can be overriden

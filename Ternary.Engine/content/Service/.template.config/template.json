@@ -5,6 +5,7 @@
     "identity": "TernaryTemplate.Service",
     "name": "Ternary templates: Service",
     "shortName": "ternary-service",
+    "sourceName": "MyExample",
     "tags": {
       "language": "C#",
       "type": "item"
@@ -14,9 +15,9 @@
         "type": "parameter",
         "description": "Prepended to the Name of the Service: [prefix]Service",
         "datatype": "text",
-        "replaces": "Example",
-        "fileRename": "Example",
-        "defaultValue": "Example"
+        "replaces": "MyExample",
+        "fileRename": "MyExample",
+        "defaultValue": "MyExample"
       }
     }
   }

@@ -1,11 +1,10 @@
-using Ternary.Engine.Example;
-
+using Ternary.Engine.Custom;
 
 var builder = TernaryAppBuilder.Create(args, (config, builder) =>
 {
     //Add Services here
-    builder.Services.AddSingleton<ExampleService>();
-    builder.Services.AddHostedService<ExampleWorker>();
+    builder.Services.AddSingleton<MyExampleService>();
+    builder.Services.AddHostedService<MyExampleWorker>();
     return builder;
 });
 

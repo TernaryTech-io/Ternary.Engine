@@ -5,6 +5,7 @@
     "identity": "TernaryTemplate.Runner",
     "name": "Ternary templates: Work Runner",
     "shortName": "ternary-runner",
+    "sourceName": "MyExample",
     "tags": {
       "language": "C#",
       "type": "item"
@@ -14,9 +15,9 @@
         "type": "parameter",
         "description": "Prepended to the Name of the Runner: [prefix]Runner",
         "datatype": "text",
-        "replaces": "Example",
-        "fileRename": "Example",
-        "defaultValue": "Example"
+        "replaces": "MyExample",
+        "fileRename": "MyExample",
+        "defaultValue": "MyExample"
       }
     }
   }

@@ -11,17 +11,29 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="content\WorkerService\obj\**" />
+	  <EmbeddedResource Remove="content\WorkerService\obj\**" />
+	  <None Remove="content\WorkerService\obj\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Remove="content\DbContext\ExampleDbContext.cs" />
+	  <Compile Remove="content\DbContext\MyExampleDbContext.cs" />
 	  <Compile Remove="content\Entity\ExampleEntity.cs" />
+	  <Compile Remove="content\Entity\MyExampleEntity.cs" />
 	  <Compile Remove="content\Runner\ExampleRunner.cs" />
+	  <Compile Remove="content\Runner\MyExampleRunner.cs" />
 	  <Compile Remove="content\Service\ExampleService.cs" />
+	  <Compile Remove="content\Service\MyExampleService.cs" />
 	  <Compile Remove="content\WorkerService\Program.cs" />
 	  <Compile Remove="content\Worker\ExampleWorker.cs" />
+	  <Compile Remove="content\Worker\MyExampleWorker.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="content\WorkerService\.gitignore" />
 	  <None Remove="content\WorkerService\appsettings.json" />
+	  <None Remove="content\WorkerService\Properties\launchSettings.json" />
 	  <None Remove="content\WorkerService\README.md" />
 	</ItemGroup>
 
@@ -32,35 +44,31 @@
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 	  </Content>
 	  <Content Include="content\DbContext\.template.config\template.json" />
+	  <Content Include="content\DbContext\MyExampleDbContext.cs" />
 	  <Content Include="content\Entity\.template.config\template.json" />
-	  <Content Include="content\Entity\ExampleEntity.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+	  <Content Include="content\Entity\MyExampleEntity.cs" />
 	  <Content Include="content\Runner\.template.config\template.json" />
-	  <Content Include="content\Runner\ExampleRunner.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+	  <Content Include="content\Runner\MyExampleRunner.cs" />
 	  <Content Include="content\Service\.template.config\template.json" />
-	  <Content Include="content\Service\ExampleService.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+	  <Content Include="content\Service\MyExampleService.cs" />
 	  <Content Include="content\WorkerService\.gitignore">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\.template.config\template.json" />
 	  <Content Include="content\WorkerService\appsettings.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\Program.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="content\WorkerService\Properties\launchSettings.json">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\WorkerService\README.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\Worker\.template.config\template.json" />
-	  <Content Include="content\Worker\ExampleWorker.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+	  <Content Include="content\Worker\MyExampleWorker.cs" />
 	  <Content Include="globalsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -73,10 +81,6 @@
 	</ItemGroup>-->
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
     <Using Include="Ternary.Engine.Core" />
     <Using Include="Ternary.Engine.CommandLine" />
     <Using Include="Ternary.Engine.Core.Configuration" />
@@ -84,6 +88,7 @@
     <Using Include="Ternary.Engine.Core.Models" />
     <Using Include="Ternary.Engine.Core.Services" />
     <Using Include="Ternary.Engine.Core.Types" />
+	<Using Include="Ternary.Engine.Custom" />
     <Using Include="Ternary.Engine.Core.Workflow" />
 		<Using Include="Microsoft.EntityFrameworkCore" />
 		<Using Include="Microsoft.Extensions.Configuration" />
@@ -98,24 +103,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="content\WorkerService\Properties\launchSettings.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
 	  <None Update="engine.bat">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="content\DbContext\ExampleDbContext.cs">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="content\WorkerService\Ternary.Engine.ExampleService.csproj">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -124,6 +114,10 @@
 	  <Folder Include="Runners\" />
 	  <Folder Include="Services\" />
 	  <Folder Include="Workers\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Ternary.Engine.Core\Ternary.Engine.Core.csproj" />
 	</ItemGroup>
 
 </Project>

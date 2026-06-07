@@ -1,11 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+namespace Ternary.Engine.Custom;
 
-namespace Ternary.Engine.Example;
-
-public class ExampleService : ServiceBase<WorkDbContext>
+public class MyExampleService : ServiceBase<MyExampleDbContext>
 {
-    public override ExampleDbContext ServiceDbContext => GetDbContext<ExampleDbContext>();
-    public ExampleService(IDynamicContextFactory contextFactory,
+    public override MyExampleDbContext ServiceDbContext => GetDbContext<MyExampleDbContext>();
+    public MyExampleService(IDynamicContextFactory contextFactory,
         ILogger<IServiceBase> logger) : base(contextFactory, logger)
     {
 

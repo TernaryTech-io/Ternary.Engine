@@ -2,7 +2,7 @@
   //Duplicate this entire section to create a new environment. Reference the environment in the appsettings.json
   "Development": {
     "DatabaseSettings": {
-      "DbConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TernaryDb;Integrated Security=True;Connect Timeout=90",
+      "DbConnection": "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;",
       "Provider": "SqlServer", //Options: SqlServer, PostgreSql, MongoDb, MySql
       "DatabaseName": "TernaryEngine", // Specific to MongoDb, ignored for other providers
       "MigrationAssembly": "Ternary.Engine",

@@ -1,5 +1,5 @@
-﻿namespace Ternary.Engine.Example;
-public class ExampleRunner : WorkRunner<ExampleService>
+﻿namespace Ternary.Engine.Custom;
+public class IntakeRunner : WorkRunner<IntakeService>
 {
     public override async Task<WorkItem> RunItemAsync(WorkItem item, IWorkContext context)
     {
@@ -8,14 +8,14 @@ public class ExampleRunner : WorkRunner<ExampleService>
         {
             /*----------------RUNNER METHODS */
             //Retrieve the Entity that the WorkItem references
-            var entity = await GetEntity<ExampleEntity>(item);
+            var entity = await GetEntity<IntakeEntity>(item);
 
             //Fall back method if the type isn't known. Returns an IBaseEntity object with limited fields
             //var entity = await GetEntity(item);
 
             /*----------------ACCESSING THE SERVICE */
             //You service should contain your database operations, many are already inherited
-            var refItem = await Service.FindAsync<ExampleEntity>(12345);
+            var refItem = await Service.FindAsync<IntakeEntity>(12345);
 
             /*----------------ACCESS YOUR DBContext Directly */
             //You can interact with your dbcontext directly as well
@@ -38,7 +38,7 @@ public class ExampleRunner : WorkRunner<ExampleService>
             /*----------------ACCESS SCOPED SERVICES */
             //You can create a scope and call scoped services
             using var scope = context.CreateScope();
-            var service = scope.ServiceProvider.GetService<ExampleDbContext>();
+            var service = scope.ServiceProvider.GetService<IntakeDbContext>();
 
             /*--------------------------------
              * Perform the work needed here.

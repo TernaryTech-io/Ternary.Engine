@@ -5,7 +5,7 @@
   "identity": "Ternary.Engine.WorkerService",
   "name": "Ternary Worker Service Project",
   "shortName": "ternary-workerservice",
-  "sourceName":"Example",
+  "sourceName":"MyExample",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -16,9 +16,9 @@
         "type": "parameter",
         "description": "The prefix of the code files and classes.",
         "datatype": "text",
-        "replaces": "ServiceName",
-        "fileRename": "ServiceName",
-        "defaultValue": "ServiceName"
+        "replaces": "MyExample",
+        "fileRename": "MyExample",
+        "defaultValue": "MyExample"
     },    
     "userSecretsId": {
       "type": "generated",

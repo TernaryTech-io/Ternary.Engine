@@ -1,12 +1,16 @@
 ﻿
-namespace Ternary.Engine.Example;
+namespace Ternary.Engine.Custom;
 
-public class ExampleWorker : WorkerBase<ExampleService>
+public class IntakeWorker : WorkerBase<IntakeService>
 {
-    public ExampleWorker(ExampleService service, ILogger<ExampleWorker> logger, IGlobalContext context)
+    public IntakeWorker(IntakeService service, ILogger<IntakeWorker> logger, IGlobalContext context)
         :base( service, logger, context)
     {
-       
+       /* Many built in methods are virtual and can be overriden
+            - RunAsync: Allows for customizing the logic at the batch level.
+            - QueueDelayedJobs: Allows for customizing how delayed jobs are handled.
+            - QueueCustomJobs: Allows for logic to queue custom work items.
+       */
     }
     /// <summary>
     /// Define the work that is executed before WorkItems begin to process. 
@@ -31,7 +35,8 @@ public class ExampleWorker : WorkerBase<ExampleService>
         var ifilter = context.GlobalProperties.Get<string>("IntakeFileFilter") ?? "*.tsv";
         if (intakeDirectory != null)
         {
-            //Do Work
+            //Create WorkItems from entities
+            //await Service.SaveItemsSafeAsync([items]);
         }
     }   
 }

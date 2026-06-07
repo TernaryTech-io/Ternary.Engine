@@ -5,6 +5,7 @@
     "identity": "TernaryTemplate.Worker",
     "name": "Ternary templates: Hosted Worker Service (BackgroundService)",
     "shortName": "ternary-worker",
+    "sourceName": "MyExample",
     "tags": {
       "language": "C#",
       "type": "item"
@@ -12,11 +13,11 @@
     "symbols": {
       "prefix":{
         "type": "parameter",
-        "description": "Prepended to the Name of the Worker: [prefix]Worker",
+        "description": "Prepended to the Name of the Service: [prefix]Worker",
         "datatype": "text",
-        "replaces": "Example",
-        "fileRename": "Example",
-        "defaultValue": "Example"
+        "replaces": "MyExample",
+        "fileRename": "MyExample",
+        "defaultValue": "MyExample"
       }
     }
   }

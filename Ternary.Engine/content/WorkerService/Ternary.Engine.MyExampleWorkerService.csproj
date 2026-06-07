@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-Ternary.Engine.EampleService-30bcb116-0dbf-4ed2-a487-9f74130bf6cd</UserSecretsId>
+    <UserSecretsId>dotnet-ServiceName-REPLACE_USER_SECRETS_ID</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,5 +19,6 @@
     <Using Include="Ternary.Engine.Core.Services" />
     <Using Include="Ternary.Engine.Core.Types" />
     <Using Include="Ternary.Engine.Core.Workflow" />
+    <Using Include="Ternary.Engine.Custom" />
   </ItemGroup>
 </Project>
