@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ternary.Engine", "Ternary.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ternary.Engine.Core", "..\Ternary.Engine.Core\Ternary.Engine.Core.csproj", "{0B683129-6E8A-A8EC-5076-8EE5B3558B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ternary.Engine.ExtractWorkerService", "..\Ternary.Engine.ExtractWorkerService\Ternary.Engine.ExtractWorkerService.csproj", "{CBCF8C16-BBE5-482A-A0C0-960194112C30}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,18 +41,6 @@ Global
 		{0B683129-6E8A-A8EC-5076-8EE5B3558B93}.Release|x64.Build.0 = Release|Any CPU
 		{0B683129-6E8A-A8EC-5076-8EE5B3558B93}.Release|x86.ActiveCfg = Release|Any CPU
 		{0B683129-6E8A-A8EC-5076-8EE5B3558B93}.Release|x86.Build.0 = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|x64.Build.0 = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Debug|x86.Build.0 = Debug|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|x64.ActiveCfg = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|x64.Build.0 = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|x86.ActiveCfg = Release|Any CPU
-		{CBCF8C16-BBE5-482A-A0C0-960194112C30}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
