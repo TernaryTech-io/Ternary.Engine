@@ -1,4 +1,7 @@
 ﻿namespace Ternary.Engine.Custom;
+/// <summary>
+/// Every bit of work you need to do to Extract, Analyze, Organize, Map, Transform, and Import can be done in a runner.
+/// </summary>
 public class MyExampleRunner : WorkRunner<MyExampleService>
 {
     public override async Task<WorkItem> RunItemAsync(WorkItem item, IWorkContext context)
