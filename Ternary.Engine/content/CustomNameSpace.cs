@@ -1,2 +1,0 @@
-﻿namespace Ternary.Engine.Custom;
-

@@ -1,5 +1,5 @@
 ﻿
-namespace Ternary.Engine.Custom;
+namespace Ternary.Engine.MyExampleWorkerService;
 
 /// <summary>
 /// Services should be where you build your common functions for interacting with your DbContext. 

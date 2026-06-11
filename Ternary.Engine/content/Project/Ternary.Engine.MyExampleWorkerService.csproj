@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ternary.Engine\Ternary.Engine.csproj" />
+    <ProjectReference Include="..\Ternary.Engine\Ternary.Engine.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="Ternary.Engine.CommandLine" />
@@ -19,6 +19,6 @@
     <Using Include="Ternary.Engine.Core.Services" />
     <Using Include="Ternary.Engine.Core.Types" />
     <Using Include="Ternary.Engine.Core.Workflow" />
-    <Using Include="Ternary.Engine.Custom" />
+    <Using Include="Ternary.Engine.MyExampleWorkerService" />
   </ItemGroup>
 </Project>

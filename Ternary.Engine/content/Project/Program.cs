@@ -1,5 +1,3 @@
-using Ternary.Engine.Custom;
-
 var builder = TernaryAppBuilder.Create(args, (config, builder) =>
 {
     //Add Services here

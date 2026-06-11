@@ -1,4 +1,4 @@
-﻿namespace Ternary.Engine.Custom;
+﻿namespace Ternary.Engine.MyExampleWorkerService;
 
 /// <summary>
 /// An example of a DbContext to use within the framework. Every Entity you create should be added here.

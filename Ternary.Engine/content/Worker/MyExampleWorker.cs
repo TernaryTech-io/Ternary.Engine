@@ -1,5 +1,5 @@
 ﻿
-namespace Ternary.Engine.Custom;
+namespace Ternary.Engine.MyExampleWorkerService;
 
 public class MyExampleWorker : WorkerBase<MyExampleService>
 {

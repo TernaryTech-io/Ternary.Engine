@@ -1,4 +1,4 @@
-﻿namespace Ternary.Engine.Custom;
+﻿namespace Ternary.Engine.MyExampleWorkerService;
 
 /// <summary>
 /// A Basic Entity that inherits the frameworks BaseEntity

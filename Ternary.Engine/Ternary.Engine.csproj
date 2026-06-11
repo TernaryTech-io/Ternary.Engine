@@ -11,9 +11,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="content\WorkerService\obj\**" />
-	  <EmbeddedResource Remove="content\WorkerService\obj\**" />
-	  <None Remove="content\WorkerService\obj\**" />
+	  <Compile Remove="content\Project\obj\**" />
+	  <EmbeddedResource Remove="content\Project\obj\**" />
+	  <None Remove="content\Project\obj\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -21,15 +21,15 @@
 	  <Compile Remove="content\Entity\MyExampleEntity.cs" />
 	  <Compile Remove="content\Runner\MyExampleRunner.cs" />
 	  <Compile Remove="content\Service\MyExampleService.cs" />
-	  <Compile Remove="content\WorkerService\Program.cs" />
+	  <Compile Remove="content\Project\Program.cs" />
 	  <Compile Remove="content\Worker\MyExampleWorker.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="content\WorkerService\.gitignore" />
-	  <None Remove="content\WorkerService\appsettings.json" />
-	  <None Remove="content\WorkerService\Properties\launchSettings.json" />
-	  <None Remove="content\WorkerService\README.md" />
+	  <None Remove="content\Project\.gitignore" />
+	  <None Remove="content\Project\appsettings.json" />
+	  <None Remove="content\Project\Properties\launchSettings.json" />
+	  <None Remove="content\Project\README.md" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -62,25 +62,25 @@
 	  <Content Include="content\Service\MyExampleService.cs">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\.gitignore">
+	  <Content Include="content\Project\.gitignore">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\.template.config\template.json">
+	  <Content Include="content\Project\.template.config\template.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\appsettings.json">
+	  <Content Include="content\Project\appsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\Program.cs">
+	  <Content Include="content\Project\Program.cs">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\Properties\launchSettings.json">
+	  <Content Include="content\Project\Properties\launchSettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="content\WorkerService\README.md">
+	  <Content Include="content\Project\README.md">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
-	   <Content Include="content\WorkerService\Ternary.Engine.MyExampleWorkerService.csproj">
+	   <Content Include="content\Project\Ternary.Engine.MyExampleWorkerService.csproj">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="content\Worker\.template.config\template.json">
@@ -108,7 +108,6 @@
     <Using Include="Ternary.Engine.Core.Models" />
     <Using Include="Ternary.Engine.Core.Services" />
     <Using Include="Ternary.Engine.Core.Types" />
-	<Using Include="Ternary.Engine.Custom" />
     <Using Include="Ternary.Engine.Core.Workflow" />
 		<Using Include="Microsoft.EntityFrameworkCore" />
 		<Using Include="Microsoft.Extensions.Configuration" />

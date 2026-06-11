@@ -1,4 +1,4 @@
-﻿namespace Ternary.Engine.Custom;
+﻿namespace Ternary.Engine.MyExampleWorkerService;
 /// <summary>
 /// Every bit of work you need to do to Extract, Analyze, Organize, Map, Transform, and Import can be done in a runner.
 /// </summary>
